@@ -1,4 +1,4 @@
-# Mocked Server for projects
+# Mock a Server for random projects
 
 Welcome to the mocked projects server
 

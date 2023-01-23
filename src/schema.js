@@ -18,10 +18,12 @@ const typeDefs = gql`
 
     length: Int @deprecated(reason: "Use durationInSeconds")
 
-    "The track's full duration, in seconds"
+    "The projects's full duration, in seconds"
     durationInSeconds: Int
 
-    modulesCount: Int
+    modulesCount: Int @deprecated(reason: "Use count")
+    count: Int
+
     "The track's complete description, can be in markdown format"
     description: String
 

@@ -11,10 +11,10 @@ const typeDefs = gql`
     id: ID!
     "The project's name"
     name: String!
-    "The project's main details"
-    details: [Detail]
 
-    thumbnail: String
+    "The project's main details"
+    category: String!
+    type: String!
 
     length: Int @deprecated(reason: "Use durationInSeconds")
 
@@ -30,15 +30,6 @@ const typeDefs = gql`
 
     "The project's complete array of Modules"
     modules: [Module!]!
-  }
-
-  "complete Detail"
-  type Detail {
-    id: ID!
-
-    category: String!
-
-    type: String!
   }
 
   type Module {

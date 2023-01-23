@@ -4,13 +4,11 @@ const mocks = {
   }),
   Project: () => ({
     id: () => "project_01",
-    name: () => "Test project separate graph",
-    detail: () => {
-      return {
-        category: "Operation service",
-        type: "ariba import" 
-      };
-    },
+    name: () => "Test name for project in separated graph",
+
+    category: () => "Operation service",
+    type: () => "Ariba import",
+
     thumbnail: () =>
       "https://res.cloudinary.com/dety84pbu/image/upload/v1598465568/nebula_cat_djkt9r.jpg",
     length: () => 1210,

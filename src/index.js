@@ -2,18 +2,11 @@ const { ApolloServer } = require("apollo-server");
 const typeDefs = require("./schema");
 const resolvers = require("./resolvers");
 const mocks = require("./mocks");
-// const TrackAPI = require("./datasources/track-api");
 
 async function startApolloServer(typeDefs, resolvers) {
   const server = new ApolloServer({
     typeDefs,
-    // resolvers,
     mocks,
-    // dataSources: () => {
-    //   return {
-    //     trackAPI: new TrackAPI(),
-    //   };
-    // },
   });
 
   const { url, port } = await server.listen({ port: process.env.PORT || 4000 });

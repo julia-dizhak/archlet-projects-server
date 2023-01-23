@@ -2,7 +2,7 @@
 
 Welcome to the mocked projects server
 
-You can [preview the builded server here](https://lift-off-client-demo.netlify.app/).
+You can [preview the builded server here](https://archlet-projects-server-production.up.railway.app/).
 
 ## How to use this repo
 
